@@ -1,0 +1,129 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style the container for the content */
+.content-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style the header */
+.header {
+    background-image: url("hng.png");
+    background-repeat: repeat;
+    color: whitesmoke;
+    padding: 10px;
+    height: 40px;
+}
+
+.header h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+/*Slack data section */
+.slack-data {
+    width: 40%;
+    height: 600px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-left: 20px;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 5px 5px rgb(216, 201, 201);
+    border-radius: 20px;
+}
+
+
+.slack-data p {
+    color: rgb(48, 45, 45);
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.slack-data:hover {
+    box-shadow: none;
+    transition: 1s ease-out;
+}
+
+/*Slack display picture */
+div.slack-data img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20%;
+    border-radius: 50%;
+}
+
+/* Style the submit button */
+button {
+    background: #00ace6;
+    margin-left: 30%;
+    margin-top: 10%;
+    padding: 5px;
+    max-width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+}
+
+/*the button link */
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: rgb(0, 119, 255);
+    text-shadow: 2px whitesmoke;
+    box-shadow: 2px 2px 2px 2px grey;
+    transition: 2s ease;
+}
+
+/*span */
+span#currentDayOfTheWeek {
+    color: black;
+}
+
+/* styles for all screen sizes */
+
+/* Media query for screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+    /* Styles for smaller screens go here */
+
+    /* font sizes, margins, and padding */
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .slack-data {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    
+}
+
+/* Media query for screens larger than 768px (e.g., tablets and desktops) */
+@media (min-width: 769px) {
+    /* Styles for larger screens  */
+
+
+    .slack-data {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    
+}
